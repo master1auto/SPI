@@ -11,9 +11,11 @@ TRISB=0;
 TRISC=0;
 myspi_init();
 while(1){
+  spi_write()
 portb.f0 = 0;             
 SSPBUF = speed;               // Start PIC16F887 Register Address transmission
-while(!SSPIF_bit);          // Wait for Data Transmit to complete
+while(!SSPIF_bit); // Wait for Data Transmit to complete
+spi_write()
 portb.f0 = 1;            
 SSPIF_bit=0;
 delay_ms(100);
